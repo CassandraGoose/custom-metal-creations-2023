@@ -2,6 +2,11 @@
 import HeroLayout from '../components/HeroLayout.vue'
 
 export default {
+  data() {
+    return {
+      email: import.meta.env.VITE_EMAIL,
+    }
+  },
   components: {
     HeroLayout
   }
@@ -23,7 +28,7 @@ export default {
       <div class="flex flex-row">
         <a
           class="bg-black hover:bg-grey text-white font-bold rounded px-2 py-2"
-          :href="`mailto:${import.meta.env.VITE_EMAIL}`"
+          :href="`mailto:${email}`"
           >Contact</a
         >
       </div>
