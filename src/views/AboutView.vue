@@ -23,7 +23,7 @@ export default {
       <div class="flex flex-row">
         <a
           class="bg-black hover:bg-grey text-white font-bold rounded px-2 py-2"
-          href="mailto:old61amos@gmail.com"
+          :href="`mailto:${import.meta.env.VITE_EMAIL}`"
           >Contact</a
         >
       </div>
