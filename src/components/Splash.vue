@@ -12,15 +12,16 @@ export default {
 <template>
   <HeroLayout>
     <template v-slot:left-content>
-      <h1>Custom Metal Creations</h1>
-      <p>scrap metal sculptures by artist and welder Terry Lawrenz</p>
-      <div class="flex flex-row ">
-        <RouterLink class="bg-black hover:bg-grey text-white font-bold rounded px-2 py-2" to="/about">About</RouterLink>
-        <button class="bg-black hover:bg-grey text-white font-bold rounded px-2 py-2">Facebook</button>
+      <div>
+        <h1 class="text-6xl">Custom Metal Creations</h1>
+        <p class="text-3xl">Scrap metal sculptures by artist and welder Terry Lawrenz</p>
+      </div>
+      <div class="flex flex-row">
+        <RouterLink class="bg-black hover:bg-grey text-white font-bold rounded-md px-2 py-2 text-xl" to="/about">Learn More About CMC</RouterLink>
       </div>
     </template>
     <template v-slot:right-content>
-      <img class="max-h-96" src="src/assets/test-logo.png" alt="logo for custom metal creations featuring vector art welder">
+      <img class="object-scale-down" src="src/assets/mock-logo.png" loading="lazy" alt="logo for custom metal creations featuring vector art welder">
     </template>
   </HeroLayout>
 

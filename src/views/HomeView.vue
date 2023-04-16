@@ -6,8 +6,6 @@
 
 <template>
   <main>
-    <!-- <TheWelcome /> -->
-    hi
     <Splash />
     <Gallery />
   </main>

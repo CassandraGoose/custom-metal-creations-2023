@@ -6,14 +6,19 @@ module.exports = {
   ],
   theme: {
     colors: {
-      red: '#801515',
+      red: '#5c0003',
       black: '#131313',
       white: '#FDF8F8',
       'off-white': '#BO9B9B',
-      grey: '#535353',
+      grey: '#d1c2c2',
       'light-red': '#D46A6A',
+      // mid red ad373a
+      // red = 5c0003
     }, 
     extend: {
+      backgroundImage: {
+        'background-pattern': "url('src/assets/background-mock.png')",
+      }
     },
   },
   plugins: [],
