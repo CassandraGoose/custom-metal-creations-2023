@@ -4,34 +4,40 @@ import InnerFooter from './components/InnterFooter.vue';
 </script>
 
 <template>
-  <div class="text-xl bg-background-pattern bg-fixed flex place-content-center">
-    <div class="bg-white rounded-md m-8">
+  <div class="md:text-xl sm:bg-background-pattern sm:bg-fixed flex place-content-center sm:bg-repeat">
+    <div class="bg-white rounded-md sm:my-[5%] sm:w-[90%] drop-shadow-lg">
       <header>
-        <nav class="flex mx-20 my-16 place-content-between">
-          <h1><img class="max-h-12" src="./assets/small-cmc.png" alt="letters CMC in stylized font"></h1>
-          <div class="flex min-w-fit">
-            <RouterLink class="flex items-center" to="/">Home</RouterLink>
-            <RouterLink class="ml-8 flex items-center" to="/about">About</RouterLink>
+        <nav class="flex sm:mx-20 sm:my-16 mx-8 my-6 place-content-between">
+          <h1>
+            <img
+              class="sm:max-h-12 max-h-8"
+              src="./assets/small-cmc.png"
+              height="50"
+              width="100"
+              alt="letters CMC in stylized font"
+            />
+          </h1>
+          <div class="flex">
+            <RouterLink class="flex items-center hover:text-mid-red" to="/">Home</RouterLink>
+            <RouterLink class="ml-8 flex items-center hover:text-mid-red" to="/about"
+              >About</RouterLink
+            >
           </div>
         </nav>
       </header>
-      <RouterView class="mx-20"/>
+      <RouterView class="sm:mx-20 mx-10" />
       <InnerFooter />
     </div>
   </div>
 </template>
 
-<style scoped>
-</style>
-
+<style scoped></style>
 
 <!-- TODO LIST
 - make various images load for various sizes
-- make mobile friendly
-- add favicons
-- link hover styles
-- button hober styles
+  - make each image less than 1 mb, consider compressing the logo
+  - utilize image cdn to deliver appropraite imge? 
+  - is it worth it to convert all the images to be webp for performance?
 - stretch: click image to see larger and see details
 - make background image correct colors 
-- format and prettify everything 
 - pop repetetive styles into rule sets or whatever tailwind calls them-->

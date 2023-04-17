@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: [
     "./index.html",
@@ -12,8 +14,8 @@ module.exports = {
       'off-white': '#BO9B9B',
       grey: '#d1c2c2',
       'light-red': '#D46A6A',
-      // mid red ad373a
-      // red = 5c0003
+      'mid-red': '#ad373a',
+      'light-black': '#636060',
     }, 
     extend: {
       backgroundImage: {
