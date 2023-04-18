@@ -1,9 +1,9 @@
 <script>
 export default {
   props: {
-    title: 'string',
-    url: 'string',
-    materials: 'string'
+    title: String,
+    url: String,
+    materials: String
   },
   data() {
     return {

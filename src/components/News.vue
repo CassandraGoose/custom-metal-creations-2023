@@ -1,10 +1,21 @@
+<script>
+import news from '../assets/news.webp';
+
+export default {
+  data() {
+    return {
+      news
+    };
+  }
+};
+</script>
 <template>
   <div class="flex flex-col items-center justify-center sm:pt-8 sm:px-16 sm:pb-16 pt-4 px-8 pb-8">
     <h3 class="sm:text-3xl text-2xl">Check out Terry in the Central Oregonian News!</h3>
     <figure class="mt-8">
       <img
         class="mx-auto"
-        src="../assets/news.webp"
+        :src="news"
         width="563"
         height="631"
         alt="newspaper clipping about Terry in the Central Oregonian newspaper. Please see fig caption for article."

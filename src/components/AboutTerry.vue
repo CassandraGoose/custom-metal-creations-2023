@@ -1,7 +1,15 @@
 <script>
 import HeroLayout from '../components/HeroLayout.vue';
+import about from '../assets/aboutsection.webp';
+import terry from '../assets/terry-l.webp';
 
 export default {
+  data() {
+    return {
+      about,
+      terry
+    };
+  },
   components: {
     HeroLayout
   }
@@ -26,7 +34,7 @@ export default {
         class="max-w-[50%] rounded-md"
         width="608"
         height="914"
-        src="../assets/aboutsection.webp"
+        :src="about"
         alt="artist Terry Lawrenz welding"
       />
     </template>
@@ -36,7 +44,7 @@ export default {
       <div class="flex justify-center">
         <img
           class="max-w-[50%] rounded-md"
-          src="../assets/terry-l.webp"
+          :src="terry"
           width="543"
           height="627"
           alt="artist terry lawrenz, posing with large metal sculpture"

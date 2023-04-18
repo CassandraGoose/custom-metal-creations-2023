@@ -1,17 +1,30 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router';
+<script>
 import InnerFooter from './components/InnterFooter.vue';
+import smallLogo from './assets/small-cmc.png';
+
+export default {
+  data() {
+    return {
+      smallLogo
+    };
+  },
+  components: {
+    InnerFooter
+  }
+};
 </script>
 
 <template>
-  <div class="md:text-xl sm:bg-background-pattern sm:bg-fixed flex place-content-center sm:bg-repeat">
+  <div
+    class="md:text-xl sm:bg-background-pattern sm:bg-fixed flex place-content-center sm:bg-repeat"
+  >
     <div class="bg-white rounded-md sm:my-[5%] sm:w-[90%] drop-shadow-lg">
       <header>
         <nav class="flex sm:mx-20 sm:my-16 mx-8 my-6 place-content-between">
           <h1>
             <img
               class="sm:max-h-12 max-h-8"
-              src="./assets/small-cmc.png"
+              :src="smallLogo"
               height="50"
               width="100"
               alt="letters CMC in stylized font"
@@ -30,14 +43,3 @@ import InnerFooter from './components/InnterFooter.vue';
     </div>
   </div>
 </template>
-
-<style scoped></style>
-
-<!-- TODO LIST
-- make various images load for various sizes
-  - make each image less than 1 mb, consider compressing the logo
-  - utilize image cdn to deliver appropraite imge? 
-  - is it worth it to convert all the images to be webp for performance?
-- stretch: click image to see larger and see details
-- make background image correct colors 
-- pop repetetive styles into rule sets or whatever tailwind calls them-->

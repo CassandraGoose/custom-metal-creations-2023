@@ -54,17 +54,17 @@ export default {
 <template>
   <section class="grid lg:grid-cols-3 lg:gap-8 mt-16 grid-cols-1">
     <ul>
-      <li class="list-none flex" v-for="image in imageSet1">
+      <li class="list-none flex" v-for="image in imageSet1" :key="image.url">
         <GalleryItem :url="image.url" :title="image.title" :materials="image.materials" />
       </li>
     </ul>
     <ul>
-      <li class="list-none" v-for="image in imageSet2">
+      <li class="list-none" v-for="image in imageSet2" :key="image.url">
         <GalleryItem :url="image.url" :title="image.title" :materials="image.materials" />
       </li>
     </ul>
     <ul>
-      <li class="list-none" v-for="image in imageSet3">
+      <li class="list-none" v-for="image in imageSet3" :key="image.url">
         <GalleryItem :url="image.url" :title="image.title" :materials="image.materials" />
       </li>
     </ul>

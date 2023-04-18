@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme');
-
+// eslint-disable-next-line
 module.exports = {
   content: [
     "./index.html",

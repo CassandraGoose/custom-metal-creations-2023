@@ -1,6 +1,4 @@
 <script>
-import { RouterLink } from 'vue-router';
-
 import facebookIcon from './icons/facebook.png';
 import emailIcon from './icons/email.png';
 
@@ -23,7 +21,12 @@ export default {
         ><img :src="facebookIcon" height="64" width="64" alt="email Custom Metal Creations"
       /></a>
       <a href="`mailto:${email}`"
-        ><img class="ml-4" :src="emailIcon" height="64" width="64" alt="visit Custom Metal Creations on Facebook"
+        ><img
+          class="ml-4"
+          :src="emailIcon"
+          height="64"
+          width="64"
+          alt="visit Custom Metal Creations on Facebook"
       /></a>
     </div>
     <div>

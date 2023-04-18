@@ -1,7 +1,13 @@
 <script>
-import { RouterLink } from 'vue-router';
 import HeroLayout from './HeroLayout.vue';
+import mockLogo from '../assets/mock-logo-small.webp';
+
 export default {
+  data() {
+    return {
+      mockLogo
+    };
+  },
   components: {
     HeroLayout
   }
@@ -29,7 +35,7 @@ export default {
       <div class="flex w-[100%] lg:justify-end justify-center">
         <img
           class="max-w-[60vmin]"
-          src="src/assets/mock-logo-small.webp"
+          :src="mockLogo"
           alt="logo for custom metal creations featuring vector art welder"
         />
       </div>
