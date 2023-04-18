@@ -18,7 +18,7 @@ module.exports = {
     }, 
     extend: {
       backgroundImage: {
-        'background-pattern': "url('src/assets/background-mock.webp')",
+        'background-pattern': "url('/public/background-mock.webp')",
       }
     },
   },

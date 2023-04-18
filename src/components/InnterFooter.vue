@@ -20,7 +20,7 @@ export default {
       <a href="https://www.facebook.com/CMCMETALART/" target="_blank"
         ><img :src="facebookIcon" height="64" width="64" alt="email Custom Metal Creations"
       /></a>
-      <a href="`mailto:${email}`"
+      <a :href="`mailto:${email}`"
         ><img
           class="ml-4"
           :src="emailIcon"
