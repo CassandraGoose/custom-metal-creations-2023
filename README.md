@@ -6,7 +6,7 @@
 
 <p>This is a portfolio website for the Artist Terry Lawrenz, who works primarily in metal. </p>
 
-<a href="custommetalcreations.live">custommetalcreations.live</a>
+[custommetalcreations.live](https://custommetalcreations.live/)
 
 ![image](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D 'vue badge') ![image](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white 'tailwind badge') ![image](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E 'Vite badge') ![image](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E 'JavaScript badge') ![image](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white 'HTML badge') ![image](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white 'vercel badge')
 
