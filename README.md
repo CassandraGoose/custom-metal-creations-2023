@@ -14,6 +14,11 @@
 
 ---
 
+## Check It Out
+![Animated gif of website being used in mobile view](https://i.imgur.com/UOqmRAX.gif)
+
+---
+
 <div align="center">
 
 ## Setup 
